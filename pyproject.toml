@@ -1,6 +1,6 @@
 [project]
 name = "extract"
-version = "0.2.0"
+version = "0.5.0"
 description = "Default template for PDM package"
 authors = [
     {name = "dMario24", email = "data.mario24@gmail.com"},
@@ -19,3 +19,8 @@ test = [
     "pytest>=8.3.2",
     "pytest-cov>=5.0.0",
 ]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  ".", "src",
+]             
